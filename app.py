@@ -15,6 +15,7 @@ app = Flask(__name__)
 # Configure CORS for production - UPDATED
 CORS(app, 
      origins=[
+         "https://portfolio-intelligence-qov7.vercel.app",  # Your specific Vercel URL
          "https://*.vercel.app",  # All Vercel apps
          "http://localhost:3000", 
          "http://127.0.0.1:*"

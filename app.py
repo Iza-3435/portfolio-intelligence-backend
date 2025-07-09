@@ -12,9 +12,10 @@ warnings.filterwarnings('ignore')
 
 app = Flask(__name__)
 
-# Configure CORS for production - UPDATE WITH YOUR VERCEL URL
+
 CORS(app, 
      origins=[
+         "https://portfolio-intelligence-qov7.vercel.app",
          "https://*.vercel.app",  # All Vercel apps
          "http://localhost:3000", 
          "http://127.0.0.1:*"

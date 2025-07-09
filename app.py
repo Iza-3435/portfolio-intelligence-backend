@@ -12,10 +12,9 @@ warnings.filterwarnings('ignore')
 
 app = Flask(__name__)
 
-
+# Configure CORS for production - UPDATED
 CORS(app, 
      origins=[
-         "https://portfolio-intelligence-qov7.vercel.app",
          "https://*.vercel.app",  # All Vercel apps
          "http://localhost:3000", 
          "http://127.0.0.1:*"
@@ -69,7 +68,7 @@ class YahooFinanceClient:
                 'symbol': symbol.upper(),
                 'price': round(current_price, 2),
                 'change': round(change, 2),
-                'change_percent': f"{change_percent:.2f}",  # Fixed formatting
+                'change_percent': f"{change_percent:.2f}",
                 'volume': int(hist['Volume'].iloc[-1]) if 'Volume' in hist.columns and not pd.isna(hist['Volume'].iloc[-1]) else 0
             }
             

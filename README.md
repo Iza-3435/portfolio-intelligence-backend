@@ -2,7 +2,7 @@ Portfolio Optimization Engine
 
 A modular, research-grade engine for building and backtesting optimized investment portfolios using quantitative strategies and machine learning. The system supports multiple allocation models, historical data analysis, performance metrics, and risk constraints.
 
-Overview
+Overview:
 This project enables data-driven portfolio construction by combining classical optimization techniques with flexible modeling. It is designed to test portfolio strategies, analyze trade-offs between risk and return, and simulate realistic investment behavior.
 Features include allocation optimizers, dynamic rebalancing, custom constraints, and visual analytics.
 
